@@ -90,7 +90,7 @@ header h4{
 .light-blue{
   position: fixed;
   width:100vw;
-  height:40%;
+  height:30%;
   left:0;
   bottom:0;
   background-color: #D8EBE9;
@@ -207,7 +207,7 @@ footer:hover{
   padding:40px;
   background: #fff;
   position: absolute;
-  top: 55%;
+  bottom:0;
   width: 100vw;
   height:40%;
 }
