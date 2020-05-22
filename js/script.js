@@ -89,7 +89,7 @@ $(function(){
   $(".scrollTop").click(function(){
       $('button.gmenu').removeClass('-open');
       $('.gnav').removeClass('-open');
-      $('body, html').delay(1000).animate({scrollTop:0}, 600, 'swing');
+      $('body, html').animate({scrollTop:0}, 600, 'swing');
       return false;
   });
   $(".scroll1").click(function(){
