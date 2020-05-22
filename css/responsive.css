@@ -1,0 +1,70 @@
+@media(max-width:690px){
+  header h4{
+    font-size:16px;
+    letter-spacing: 5px;
+  }
+
+  .nav1{
+    display:none;
+  }
+  .nav2 li:first-child{
+    margin-bottom:150px;
+  }
+  .nav2 li a{
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+
+  section{
+    width:70%;
+    margin-left: 10%;
+  }
+  section h2{
+    margin-bottom:20px;
+  }
+  section h2 span{
+    font-size: 30px;
+  }
+  section p{
+    margin-left:30px;
+    font-size: 14px;
+  }
+  section h1{
+    margin-left:10px;
+    font-weight: normal;
+  }
+  section table{
+    margin-left:20px;
+    line-height: 30px;
+  }
+  section td{
+    font-size: 14px;
+    padding-right:10px;
+  }
+
+
+  .modal-main-left{
+    display:none;
+  }
+  .modal__content{
+    padding:20px;
+  }
+  .modal-main-right{
+    width:80%;
+  }
+  .modal-me{
+    justify-content: center;
+  }
+  .close{
+    position:absolute;
+    right:0;
+    top:43%;
+    color:gray;
+    z-index:1000;
+  }
+
+  .gmenu{
+    display:flex;
+  }
+}
