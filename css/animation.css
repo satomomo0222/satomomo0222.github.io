@@ -8,6 +8,13 @@
   100% {transform: translateY(0px);}
 }
 
+@keyframes key2{
+  0% {transform: translateY(0px);}
+  30% {transform: translateY(-12px);}
+  100% {transform: translateY(0px);}
+}
+
+
 
 @keyframes menu-top {
 	0% {

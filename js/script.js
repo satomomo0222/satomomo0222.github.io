@@ -65,7 +65,7 @@ $(function(){
             windowHeight = $(window).height();
         if (scroll > 0){
           $(this).addClass('scrollin');
-        }else if (scroll == 0){
+        }else if (scroll <= 0){
           $(this).removeClass('scrollin');
         }
       });
