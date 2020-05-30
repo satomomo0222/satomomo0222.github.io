@@ -1,5 +1,18 @@
 $(function(){
 
+  // ローディング画面 1秒は見せる
+  window.onload = function() {
+    this.setTimeout(stopload,1000);
+  }
+
+  // 遅くても3秒で消す
+  setTimeout(stopload, 3000);
+
+  var stopload = function(){
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+  }
+  
   // raindrops
 
   $('#example6').raindrops(
@@ -114,6 +127,10 @@ $(function(){
     $('button.gmenu').removeClass('-open');
     $('.gnav').removeClass('-open');
     $('body, html').animate({scrollTop:$('.section4').offset().top - 300}, 600, 'swing');
+    return false;
+  });
+  $(".scrollDown").click(function(){
+    $('body, html').animate({scrollTop:$('.section1').offset().top - 300}, 1000, 'swing');
     return false;
   });
   });
