@@ -350,7 +350,7 @@ footer:hover i{
   padding:20px;
   font-size: 50px;
   font-weight: lighter;
-  color: white;
+  color: gray;
 }
 .contact{
   display: flex;
@@ -398,37 +398,80 @@ footer:hover i{
 }
 
 
-
 .slide-area{
-  width:500px;
+  width:400px;
   overflow: hidden;
   position: absolute;
-  top:0;
+  top:30px;
   left:50%;
   transform: translateX(-50%);
 }
+
 .slick01 img{
   object-fit: cover;
   width:100%;
+  border-radius: 5px;
+}
+
+.slick01 li{
+  border:2px double gray;
+  border-radius: 5px;
+}
+
+.slick02{
+  margin-top: 10px;
+}
+
+.slick02 img{
+  object-fit: cover;
+  width:100%;
+  border-radius: 5px;
+}
+
+.slick02 li{
+  border:2px double gray;
+  border-radius: 5px;
+}
+
+.next{
+  position: absolute;
+  color: gray;
+  top:35%;
+  right:20%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.prev{
+  position: absolute;
+  color: gray;
+  top:35%;
+  left:20%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.work{
+  display: flex;
+  justify-content: center;
+}
+
+.slick03{
+  width:400px;
+}
+.slick03 li{
+  height:300px;
+}
+
+.slick03 p{
+  color: gray;
+  margin-bottom: 20px;
+}
+.slick03 li a{
+  color: gray;
+  border-bottom:1px solid gray;
 }
 
 
-.box{
-  width:100px;
-  height:100px;
-}
-.box1{
-  background-color: red;
-}
-.box2{
-  background-color: orange;
-}
-.box3{
-  background-color: yellow;
-}
-.box4{
-  background-color: yellowgreen;
-}
 
 
 /* menu-icon */
