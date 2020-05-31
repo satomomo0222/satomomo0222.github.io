@@ -326,7 +326,6 @@ footer:hover i{
 .modal__bg{
   background: #D8EBE9;
   height: 100vh;
-  position: absolute;
   width: 100%;
 }
 .modal__content{
@@ -396,6 +395,39 @@ footer:hover i{
   background-color: gray;
   position: absolute;
   transform: translate(-40px,11px);
+}
+
+
+
+.slide-area{
+  width:500px;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.slick01 img{
+  object-fit: cover;
+  width:100%;
+}
+
+
+.box{
+  width:100px;
+  height:100px;
+}
+.box1{
+  background-color: red;
+}
+.box2{
+  background-color: orange;
+}
+.box3{
+  background-color: yellow;
+}
+.box4{
+  background-color: yellowgreen;
 }
 
 

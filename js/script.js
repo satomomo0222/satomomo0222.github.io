@@ -1,6 +1,10 @@
 $(function(){
+  var stopload = function(){
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+  }
 
-  // ローディング画面 1秒は見せる
+  // loading animation 1秒は見せる
   window.onload = function() {
     this.setTimeout(stopload,1000);
   }
@@ -8,10 +12,7 @@ $(function(){
   // 遅くても3秒で消す
   setTimeout(stopload, 3000);
 
-  var stopload = function(){
-    const spinner = document.getElementById('loading');
-    spinner.classList.add('loaded');
-  }
+  
   
   // raindrops
 
@@ -31,7 +32,7 @@ $(function(){
       density: 0.04});
   
 
-      // モーダル
+      // modal
     $('.js-modal-open1').on('click',function(){
       $('.js-modal1').fadeIn();
       return false;
@@ -49,16 +50,36 @@ $(function(){
       $('.js-modal2').fadeOut();
       return false;
     });
+    $('.js-modal-open3').on('click',function(){
+      $('.js-modal3').fadeIn();
+      $('.slick01').slick();
+      return false;
+    });
+    $('.js-modal-close3').on('click',function(){
+      $('.js-modal3').fadeOut();
+      return false;
+    });
 
-    // 左上メニュー
+
+
+
+
+
+    
+
+
+
+
+
+
+    // left menu
     $('button.gmenu').on('click', function(){
       $(this).toggleClass('-open');
       $('.gnav').toggleClass('-open');
     });
     
 
-
-    // フェードイン
+    // fadein
     $(window).scroll(function(){
       $('.fadein').each(function(){
         var elemPos = $(this).offset().top,
@@ -97,8 +118,7 @@ $(function(){
     });
 
 
-
-  //scroll
+  //auto scroll
   $(".scrollTop").click(function(){
       $('button.gmenu').removeClass('-open');
       $('.gnav').removeClass('-open');
