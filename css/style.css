@@ -189,7 +189,7 @@ header h4{
 .light-blue{
   position: fixed;
   width:100vw;
-  height:30%;
+  height:35%;
   left:0;
   bottom:0;
   background-color: #D8EBE9;
@@ -431,7 +431,16 @@ footer:hover i{
 .slick02 li{
   border:2px double gray;
   border-radius: 5px;
+  background-color: white;
 }
+.slick02 img{
+  opacity:0.3;
+  transition: all 0.5s;
+}
+.slick02 img:hover{
+  opacity: 1;
+}
+
 
 .next{
   position: absolute;

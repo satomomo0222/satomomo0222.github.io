@@ -61,15 +61,19 @@ $(function(){
     });
 
 
+    // const slick = function(){
+    //   $('.slider').slick({
+    //     asNavFor:'.slider'
+    //   });
+    
+
     const slick = function(){
       $('.slick01').slick({
         arrows:false,
-        asNavFor:'.slick02',
-        asNavFor:'.slick03',
+        asNavFor:'.slider'
       });    
       $('.slick02').slick({
-          asNavFor:'.slick01',
-          asNavFor:'.slick03',
+          asNavFor:'.slider',
           focusOnSelect: true,
           slidesToShow:2,
           slidesToScroll:1,
@@ -77,12 +81,11 @@ $(function(){
           arrows:false,
       });
       $('.slick03').slick({
-        asNavFor:'.slick01',
-        asNavFor:'.slick02',
+        asNavFor:'.slider',
         arrows:false,
         infinite: true,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
       });
     }
 

@@ -1,4 +1,18 @@
 @media(max-width:800px){
+
+  .slide-area{
+    margin-top: 50px;
+    width:400px;
+  }
+  .next{
+    right:10%;
+  }
+  .prev{
+    left:10%;
+  }
+}
+
+@media(max-width:740px){
   header h4{
     font-size:16px;
     letter-spacing: 5px;
@@ -57,14 +71,9 @@
     justify-content: center;
     padding:0;
   }
-  .next{
-    right:10%;
-  }
-  .prev{
-    left:10%;
-  }
 
   .slide-area{
+    margin-top: 0;
     width:300px;
   }
   .next,.prev{
@@ -80,9 +89,10 @@
   .close{
     position:absolute;
     right:0;
-    top:43%;
+    top:46%;
     color:gray;
     z-index:1000;
+    padding: 0 10px;
   }
 
   .gmenu{
